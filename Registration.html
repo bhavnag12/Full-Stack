@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Registration form</h2>
+    <form action ="/submit">
+        <label for="FirstName">FirstName:</label>
+        <input type="text" placeholder="enter your name" required><br><br>
+
+         <label for="LastName">LastName:</label>
+        <input type="text" placeholder="enter your name" required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" placeholder="enter your age" required><br><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio">Male
+        <input type ="radio">female
+        <input type="radio">Other
+        <br>
+        <br>
+
+        <label for="country">Country:</label>
+        <select name="country" id="country" required>
+            <option value="">--Select--</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+        </select>
+        <br>
+        <br>
+        
+        <label for ="Skills">Skills:</label>
+        <input type="checkbox">HTML
+        <input type="checkbox">CSS
+        <input type="checkbox">JavaScript
+        <br>
+        <br>
+        
+
+        <lable for = "Resume"> Upload Resume</lable>
+        <input type="file" id="resume" name="resume"required><br><br>
+        <br>
+        <br>
+
+        <input type="submit">
+    </form>
+</body>
+</html>
