@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="job.css">
+</head>
+<body>
+   <div class="container">
+      <h1>Job Application Form</h1>
+
+      <form action="#" method="post">
+
+        <!-- Personal Information -->
+        <div class="personal">
+            <h3>Personal Information</h3><br>
+
+            <label for="firstName">First Name:</label><br><br>
+            <input type="text"  placeholder="Enter first name" required><br><br>
+
+            <label for="lastName">Last Name:</label><br><br>
+            <input type="text"" placeholder="Enter last name" required><br><br>
+
+            <label for="email">Email:</label><br><br>
+            <input type="email"  placeholder="xyz@gmail.com" required><br><br>
+
+            <label for="phone">Phone Number:</label><br><br>
+            <input type="tel"  placeholder="10 digit number" pattern="[0-9]{10}" required><br><br>
+        </div>
+
+        <!-- Job Details -->
+        <div class="job">
+            <h3>Job Details</h3><br>
+
+            <label for="position">Position Applied For:</label><br><br>
+            <select id="position" name="position" required>
+                <option value="">--Select--</option>
+                <option value="front">Front End Developer</option>
+                <option value="back">Backend Developer</option>
+                <option value="ui">UI/UX Designer</option>
+            </select><br><br>
+
+            <label for="experience">Years of Experience:</label><br><br>
+            <input type="number" id="experience" name="experience" placeholder="Enter years of experience"><br><br>
+
+            <label for="cover">Cover Letter:</label><br><br>
+            <textarea id="cover" name="cover" rows="5" placeholder="Write your cover letter ..." required></textarea><br><br>
+        </div>
+
+        <!-- Availability -->
+        <div class="available">
+            <h3>Availability</h3><br>
+
+            <label for="startDate">Available Start Date:</label><br><br>
+            <input type="date" id="startDate" name="startDate"><br><br>
+
+            <label>Willing to Relocate?</label><br><br>
+            <input type="radio" id="relocateYes" name="relocate" value="yes">
+            <label for="relocateYes">Yes</label>
+            <label for="relocateNo">No</label><br><br>
+        </div>
+
+        <!-- Submit -->
+        <div class="submit">
+            <button type="submit">Submit Application</button>
+        </div>
+
+      </form>
+   </div>
+</body>
+</html>
