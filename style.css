@@ -1,0 +1,33 @@
+h2{
+    color: mediumspringgreen;
+}
+
+
+.para{
+    color: navy;
+}
+
+#heading{
+    color: aqua;
+}
+
+/*  ELEMENT SELECTOR*/
+        p{
+            color: palevioletred;
+        }
+
+
+
+   /*   UNIVERSAL SELECTOR
+        *{
+            color:blue
+        }*/
+
+        #first{color: red;}
+        .second{color: green;}
+
+        /*Group selector*/
+/* h1,h2,h3{
+            color: maroon;
+        }*/
+    
