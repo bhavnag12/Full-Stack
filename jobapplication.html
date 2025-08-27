@@ -13,25 +13,25 @@
       <form action="#" method="post">
 
         <!-- Personal Information -->
-        <div class="personal">
-            <h3>Personal Information</h3><br>
+        <fieldset class="personal">
+            <legend>Personal Information</legend><br>
 
             <label for="firstName">First Name:</label><br><br>
-            <input type="text"  placeholder="Enter first name" required><br><br>
+            <input type="text" id="firstName" name="firstName" placeholder="Enter first name" required><br><br>
 
             <label for="lastName">Last Name:</label><br><br>
-            <input type="text"" placeholder="Enter last name" required><br><br>
+            <input type="text" id="lastName" name="lastName" placeholder="Enter last name" required><br><br>
 
             <label for="email">Email:</label><br><br>
-            <input type="email"  placeholder="xyz@gmail.com" required><br><br>
+            <input type="email" id="email" name="email" placeholder="xyz@gmail.com" required><br><br>
 
             <label for="phone">Phone Number:</label><br><br>
-            <input type="tel"  placeholder="10 digit number" pattern="[0-9]{10}" required><br><br>
-        </div>
+            <input type="tel" id="phone" name="phone" placeholder="10 digit number" pattern="[0-9]{10}" required><br><br>
+        </fieldset>
 
         <!-- Job Details -->
-        <div class="job">
-            <h3>Job Details</h3><br>
+        <fieldset class="job">
+            <legend>Job Details</legend><br>
 
             <label for="position">Position Applied For:</label><br><br>
             <select id="position" name="position" required>
@@ -46,11 +46,11 @@
 
             <label for="cover">Cover Letter:</label><br><br>
             <textarea id="cover" name="cover" rows="5" placeholder="Write your cover letter ..." required></textarea><br><br>
-        </div>
+        </fieldset>
 
         <!-- Availability -->
-        <div class="available">
-            <h3>Availability</h3><br>
+        <fieldset class="available">
+            <legend>Availability</legend><br>
 
             <label for="startDate">Available Start Date:</label><br><br>
             <input type="date" id="startDate" name="startDate"><br><br>
@@ -58,8 +58,9 @@
             <label>Willing to Relocate?</label><br><br>
             <input type="radio" id="relocateYes" name="relocate" value="yes">
             <label for="relocateYes">Yes</label>
+            <input type="radio" id="relocateNo" name="relocate" value="no">
             <label for="relocateNo">No</label><br><br>
-        </div>
+        </fieldset>
 
         <!-- Submit -->
         <div class="submit">

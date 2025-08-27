@@ -72,4 +72,9 @@ button {
 #common{
     background-color:rgb(138, 238, 233);
 }
-
+legend {
+    font-size: 20px; 
+    font-weight: bold; 
+    color: rgb(5, 5, 102); 
+    padding: 5px 0;
+}
