@@ -1,0 +1,27 @@
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(180deg, #0a4fbe, #9bbce4);
+}
+
+.ball {
+    width: 80px;
+    height: 80px;
+    background-color: rgb(151, 23, 23);
+    border-radius: 50%;
+    position: relative;
+    animation: bounce 1s infinite alternate ease-in-out;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(200px);
+    }
+}
